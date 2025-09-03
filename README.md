@@ -21,7 +21,7 @@ The chatbot lets you upload PDFs, build a local vector store, and query your doc
 <img width="1919" height="921" alt="Screenshot 2025-09-03 195446" src="https://github.com/user-attachments/assets/14da754e-a0e6-4b51-ab76-db124fe1d5d7" />
 
 ### Example PDF Answering
-<img width="738" height="759" alt="Screenshot 2025-09-03 195719" src="https://github.com/user-attachments/assets/17adca8b-252b-40a7-ab07-f2e3a247fa7f" />
+<img width="538" height="559" alt="Screenshot 2025-09-03 195719" src="https://github.com/user-attachments/assets/17adca8b-252b-40a7-ab07-f2e3a247fa7f" />
 
 ---
 

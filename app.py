@@ -30,6 +30,7 @@ def main():
                 st.session_state.vectorstore = build_vectorstore(
                     docs=docs,
                     embed_model_name=sidebar["embed_model_name"],
+                    vectorstore_type=sidebar["vectorstore_type"],
                     chunk_size=sidebar["chunk_size"],
                     chunk_overlap=sidebar["chunk_overlap"],
                 )
@@ -40,7 +41,7 @@ def main():
                     memory=st.session_state.memory,
                     api_key=GROQ_API_KEY,
                 )
-                st.success(f"Vector store ready ✅ | {len(docs)} chuncks loaded.")
+                st.success(f"{sidebar['vectorstore_type']} Vector store ready ✅ | {len(docs)} chunks loaded.")
 
     # Chat controls
     user_q, ask_btn, clear_history, rebuild_chain = ui.render_chat_header()

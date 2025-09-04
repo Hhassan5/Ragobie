@@ -17,5 +17,5 @@ TMP_UPLOAD_DIR = ".tmp_uploads"
 
 def set_page():
     """Minimal Streamlit page configuration and title."""
-    st.set_page_config(page_title="RAG FIASS Chatbot", page_icon="🤖", layout="wide")
-    st.title("RAG Chatbot Groq + HuggingFace + FAISS")
+    st.set_page_config(page_title="RAG Chatbot", page_icon="🤖", layout="wide")
+    st.title("RAG Chatbot: Groq + HuggingFace + FAISS/Chroma")

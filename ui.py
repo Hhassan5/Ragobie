@@ -11,6 +11,11 @@ def render_sidebar():
             value=DEFAULT_EMBED_MODEL,
             help="Any Sentence-Transformers model works; this one is light & fast.",
         )
+        vectorstore_type = st.selectbox(
+            "Vector Store Type",
+            ["FAISS", "ChromaDB"],
+            help="Choose which vector store backend to use."
+        )
         chunk_size = st.slider("Chunk size", 300, 2000, 1000, 50)
         chunk_overlap = st.slider("Chunk overlap", 0, 400, 150, 10)
         k = st.slider("Top-k retrieved documents", 1, 10, 4, 1)
@@ -31,6 +36,7 @@ def render_sidebar():
     return {
         "model_name": model_name,
         "embed_model_name": embed_model_name,
+        "vectorstore_type": vectorstore_type,
         "chunk_size": chunk_size,
         "chunk_overlap": chunk_overlap,
         "k": k,

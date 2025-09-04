@@ -1,17 +1,17 @@
-# 📚 RAG Chatbot (Groq + HuggingFace + FAISS)
+# 🤖 RAG Chatbot (Groq + HuggingFace + FAISS/Chroma)
 
-A **Retrieval-Augmented Generation (RAG) chatbot** built with [LangChain](https://www.langchain.com/), [Groq LLM API](https://groq.com/), [HuggingFace embeddings](https://huggingface.co/sentence-transformers), and [FAISS](https://github.com/facebookresearch/faiss).  
-The chatbot lets you upload PDFs, build a local vector store, and query your documents interactively.
+A **Retrieval-Augmented Generation (RAG) chatbot** built with [LangChain](https://www.langchain.com/), [Groq LLM API](https://groq.com/), [HuggingFace embeddings](https://huggingface.co/sentence-transformers), and vector databases (**FAISS** or **ChromaDB**).  
+The chatbot lets you upload PDFs, build a vector store, and query your documents interactively.
 
 ---
 
 ## ✨ Features
-- ⚡ Fast LLM inference using **Groq API**  
-- 🔎 Document search powered by **FAISS**  
-- 📑 Supports **PDF uploads & directories**  
-- 🧩 Configurable chunk size, overlap, and top-k retrieval  
-- 💬 Conversational memory using LangChain  
-- 📖 Displays retrieved document chunks for transparency  
+- ⚡ Fast LLM inference via **Groq API**
+- 📑 Upload **single or multiple PDFs** or load from a directory
+- 🧩 Choice of vector store: **FAISS** or **ChromaDB**
+- 🔎 Configurable chunk size, overlap, and top-k retrieval
+- 💬 Conversational memory (LangChain buffer memory)
+- 📖 Option to display retrieved chunks for transparency
 
 ---
 
@@ -36,4 +36,3 @@ python -m venv .venv
 source .venv/bin/activate   # (Linux/Mac)
 .venv\Scripts\activate      # (Windows)
 pip install -r requirements.txt
-streamlit run app.py

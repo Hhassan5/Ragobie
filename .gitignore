@@ -11,8 +11,8 @@ __pycache__/
 venv/
 env/
 my_env/
-.env/
-.temp_uploads/
+.env
+.tmp_uploads/
 
 # IDE / OS files
 .vscode/
